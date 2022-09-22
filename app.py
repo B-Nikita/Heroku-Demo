@@ -19,6 +19,7 @@ def predict():
     prediction = model.predict(final_features)
 
     output = round(prediction[0], 2)
+    print('yes, I changed')
 
     return render_template('index.html', prediction_text='Employee Salary should be $ {}'.format(output))
 
